@@ -7,8 +7,8 @@ import type { ChatMessage, ErrorMessage } from '@/types'
 
 export default () => {
   let inputRef: HTMLTextAreaElement
-  const [messageGeminiList, setMessageGeminiList] = createSignal<any[]>([''])
-  const [messageChatgptList, setMessageChatgptList] = createSignal<any[]>([''])
+  const [messageGeminiList, setMessageGeminiList] = createSignal<any[]>([])
+  const [messageChatgptList, setMessageChatgptList] = createSignal<any[]>([])
 
   const [currentGeminiError, setCurrentGeminiError] = createSignal<ErrorMessage>()
   const [currentChatgptError, setCurrentChatgptError] = createSignal<ErrorMessage>()
