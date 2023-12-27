@@ -1,0 +1,41 @@
+---
+import Logo_Gemini from './Logo_Gemini.astro'
+import Logo_ChatGpt from './Logo_ChatGpt.astro'
+import Themetoggle from './Themetoggle.astro'
+import {model} from "../utils/openAI";
+import Logo_ChatGpt from "./Logo_ChatGpt.astro";
+---
+
+<header>
+  <div class="split">
+    <div class="fb items-center">
+      <Logo_Gemini />
+    </div>
+    <div class="fi mt-2">
+      <span class="gpt-title">Gemini Pro</span>
+      <span class="gpt-subtitle">Chat</span>
+    </div>
+    <p mt-1 op-60>Based on Gemini Pro API.</p>
+  </div>
+  <div class="split">
+    <div class="fb items-center">
+      <Logo_ChatGpt />
+      <Themetoggle />
+    </div>
+    <div class="fi mt-2">
+      <span class="gpt-title">ChatGPT</span>
+      <span class="gpt-subtitle">Demo</span>
+    </div>
+    <p mt-1 op-60>Based on OpenAI API ({model}).</p>
+  </div>
+</header>
+
+<style>
+  header {
+    display: flex;
+  }
+
+  .split {
+    width: 50%;
+  }
+</style>
