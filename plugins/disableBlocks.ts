@@ -1,6 +1,6 @@
 export default function plugin() {
   const transform = (code: string, id: string) => {
-    if (id.includes('pages/api/generate.ts')) {
+    if (id.includes('pages/api/generate.ts') || id.includes('pages/api/generate_chatgpt.ts')) {
       return {
         code: code.replace(/^.*?#vercel-disable-blocks([\s\S]+?)#vercel-end.*$/gm, ''),
         map: null,
