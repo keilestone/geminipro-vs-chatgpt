@@ -13,7 +13,7 @@ Live demo: [Gemini Pro Vs ChatGpt](https://www.geminiprovschatgpt.com)
 
 Just click the button above and follow the instructions to deploy your own copy of the app.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/keilestone/geminipro-vs-chatgpt&env=OPENAI_API_KEY&&envDescription=OPENAI%20API%20Key%20for%Chatgpt&GEMINI_API_KEY&envDescription=Google%20API%20Key%20for%20GeminiProChat&envLink=https://makersuite.google.com/app/apikey&project-name=gemini-pro-chat&repository-name=gemini-pro-chat&demo-title=Gemini%20Pro%20Chat&demo-description=Minimal%20web%20UI%20for%20Gemini%20Pro.&demo-url=https%3A%2F%2Fgeminiprochat.com&demo-image=https%3A%2F%2Fgeminiprochat.com%2Ficon.svg)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/keilestone/geminipro-vs-chatgpt&env=OPENAI_API_KEY&&envDescription=OPENAI%20API%20Key%20for%Chatgpt&GEMINI_API_KEY&envDescription=Google%20API%20Key%20for%20GeminiProChat&envLink=https://makersuite.google.com/app/apikey&project-name=geminipro-vs-chatgpt&repository-name=geminipro-vs-chatgpt&demo-title=Gemini%20Pro%20Vs%20ChatGpt&demo-description=Minimal%20web%20UI%20for%20Gemini%20Pro.&demo-url=https%3A%2F%2Fgeminiprovschatgpt.com&demo-image=https%3A%2F%2Fgeminiprovschatgpt.com%2Ficon.svg)
 
 > [!NOTE]
 > #### Solution for "User location is not supported for the API use"
@@ -21,8 +21,8 @@ Just click the button above and follow the instructions to deploy your own copy 
 >
 > 1. Go to this [**palm-proxy**](https://github.com/antergone/palm-proxy) repo and click **"Deploy With Vercel"**.
 > 2. Once the deployment is complete, you will receive a domain name assigned by Vercel (e.g., `https://xxx.vercel.app`).
-> 3. In your **Gemini Pro Chat** project, set an environment variable named `API_BASE_URL` with the value being the domain you got from deploying the palm proxy (`https://xxx.vercel.app`).
-> 4. Redeploy your **Gemini Pro Chat** project to finalize the configuration. This should resolve the issue.
+> 3. In your **Gemini Pro Vs Chatgpt** project, set an environment variable named `API_BASE_URL` with the value being the domain you got from deploying the palm proxy (`https://xxx.vercel.app`).
+> 4. Redeploy your **Gemini Pro Vs Chatgpt** project to finalize the configuration. This should resolve the issue.
 >
 > Thanks to [**antergone**](https://github.com/antergone/palm-proxy) for providing this solution.
 
@@ -61,7 +61,7 @@ You can control the website through environment variables.
 | Name | Description                                                                                                                                                                                       | Required |
 | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| --- |
 | `GEMINI_API_KEY` | Your API Key for GEMINI. You can get it from [here](https://makersuite.google.com/app/apikey).                                                                                                    | **✔** |
-| `OPENAI_API_KEY` | Your API Key for OPENAI. You can get it from .                                                                                                    | **✔** |
+| `OPENAI_API_KEY` | Your API Key for OPENAI.                                                                                                    | **✔** |
 | `API_BASE_URL` | Custom base url for GEMINI API. Click [here](https://github.com/babaohuang/GeminiProChat?tab=readme-ov-file#solution-for-user-location-is-not-supported-for-the-api-use) to see when to use this. | ❌ |
 | `HEAD_SCRIPTS` | Inject analytics or other scripts before `</head>` of the page                                                                                                                                    | ❌ |
 | `PUBLIC_SECRET_KEY` | Secret string for the project. Use for generating signatures for API calls                                                                                                                        | ❌ |
@@ -109,13 +109,4 @@ You can control the website through environment variables.
 This project is inspired by and based on the following open-source project:
 
 - [ChatGPT-Demo](https://github.com/anse-app/chatgpt-demo) - For the foundational codebase and features.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=babaohuang/geminiprochat&type=Timeline)](https://star-history.com/#babaohuang/geminiprochat&Timeline)
-
-## Buy me a coffee
-
-If this repo is helpful to you, buy me a coffee,thank you very much!😄
-
-<a href="https://www.buymeacoffee.com/babaohuang" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+- [GeminiProChat](https://github.com/babaohuang/GeminiProChat) - For the features
